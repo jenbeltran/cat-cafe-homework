@@ -1,0 +1,98 @@
+body {
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    min-height: 100vh;
+}
+
+h1 {
+    color:#F6BD60;
+    font-size: 36px;
+}
+
+h2 {
+    color:#F6BD60;
+}
+
+footer { 
+    background-color: #90F1EF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 24px;
+}
+
+main { 
+    display: flex;
+    align-items: center;
+    padding: 5rem 5rem 8rem 5rem;
+}
+
+#aboutus-text {
+    padding-right: 5rem;
+}
+
+#aboutus-text p { 
+    font-size: 24px;
+}
+
+#main-cat-img{
+    transform: translate(-42px, 18px);
+    box-shadow: 70px -70px #FFD6E0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+    ul {
+        display: none;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        padding: 5rem 0 8rem 0;
+    }
+
+    #main-cat-img {
+        margin-bottom: 3rem;
+        box-shadow: none;
+        width: 100%;
+        transform: none;
+    }
+
+    #aboutus-text {
+        text-align: center;
+    }
+  }
+
+@media only screen and (min-width: 921px) {
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #main-cat-img {  
+        box-shadow: none;
+        width: 100%;
+    }
+  }
