@@ -9,8 +9,10 @@ h1 {
     font-size: 36px;
 }
 
-h2 {
+#nav-happy-cat-cafe {
     color:#F6BD60;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 footer { 
@@ -37,10 +39,6 @@ main {
     padding: 5rem 5rem 8rem 5rem;
 }
 
-#aboutus-text {
-    padding-right: 5rem;
-}
-
 #aboutus-text p { 
     font-size: 24px;
 }
@@ -60,6 +58,13 @@ footer {
 
 footer p{
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer img{
+    height: 80px;
 }
 
 @media only screen and (max-width: 920px) {
@@ -69,7 +74,7 @@ footer p{
 
     main {
         flex-direction: column-reverse;
-        padding: 5rem 0 8rem 0;
+        padding: 0rem 0 10rem 0;
     }
 
     #main-cat-img {
@@ -88,6 +93,10 @@ footer p{
     #hamburger-menu {
         display: none;
     }
+
+    #aboutus-text {
+        padding-right: 5rem;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -96,3 +105,10 @@ footer p{
         width: 100%;
     }
   }
+
+@media only screen and (max-width: 580px) {
+    footer {  
+        flex-direction: column;
+        align-items: center;
+    }
+}
